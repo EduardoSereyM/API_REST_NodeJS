@@ -11,11 +11,13 @@ app.use(cors());
 
 //DATABASE CONNECTION
 var conexion = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '1582',
-    database: 'articulosdb'
+    host: 'us-cdbr-east-05.cleardb.net',
+    user: 'b6501f40edd7e0',
+    password: '7bfa543e',
+    database: 'heroku_112688f3993912f'
 });
+
+
 conexion.connect(function (err) {
     if (err) {
         console.log('Ocurrio un error'.bgRed);
