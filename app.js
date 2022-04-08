@@ -113,7 +113,7 @@ app.delete('/api/articulos/:id', (req, res) => {
 
 
 var puerto = process.env.PORT || 8080;
-app.listen(puerto, (err) => {
+app.listen(process.env.PORT || 8080, (err) => {
     err && console.log('Error: '.bgRed, err);
     console.log(`Conexion establecida en http://localhost:${puerto}`.green);
 })
